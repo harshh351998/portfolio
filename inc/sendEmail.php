@@ -46,7 +46,7 @@ if($_POST) {
 
    if (!$error) {
 
-      ini_set("sendmail_from", $s); // for windows server
+      ini_set("sendmail_from", $email); // for windows server
       $mail = mail($s, $subject, $message, $headers);
 
 		if ($mail) { echo "OK"; }
